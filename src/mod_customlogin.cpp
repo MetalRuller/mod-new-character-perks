@@ -399,7 +399,7 @@ public:
             }
 
             // If enabled.. learn special skills abilities
-            if (sConfigMgr->GetBoolDefault("CustomLogin.SpecialAbility", true))
+            /*if (sConfigMgr->GetBoolDefault("CustomLogin.SpecialAbility", true))
             {
                 // Learn Specialized Skills
                 player->learnSpell(1784);	// Stealth
@@ -444,7 +444,7 @@ public:
                 std::ostringstream ss;
                 ss << "|cffFF0000[CustomLogin]:|cffFF8000 Your spellbook has been scribed with special abilities.";
                 ChatHandler(player->GetSession()).SendSysMessage(ss.str().c_str());
-            }
+            }*/
 
             // If enabled.. set exalted factions (AzerothCore config for rep not working as of 2017-08-25)
             if (sConfigMgr->GetBoolDefault("CustomLogin.Reputation", true))
