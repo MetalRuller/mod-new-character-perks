@@ -199,7 +199,7 @@ public:
                     player->AddItem(weapon, 1);
                     player->AddItem(weapon2, 1);
                     player->AddItem(weapon3, 1);
-                    player->AddItem(bag, 4);
+                    player->AddItem(bag, 1);
                     break;
 
                 case CLASS_PALADIN:
@@ -209,7 +209,7 @@ public:
                     player->AddItem(chest, 1);
                     player->AddItem(weapon, 1);
                     player->AddItem(weapon2, 1);
-                    player->AddItem(bag, 4);
+                    player->AddItem(bag, 1);
                     break;
 
                 case CLASS_WARRIOR:
@@ -220,7 +220,7 @@ public:
                     player->AddItem(weapon, 1);
                     player->AddItem(weapon2, 1);
                     player->AddItem(weapon3, 1);
-                    player->AddItem(bag, 4);
+                    player->AddItem(bag, 1);
                     break;
 
                 case CLASS_HUNTER:
@@ -231,7 +231,7 @@ public:
                     player->AddItem(weapon, 1);
                     player->AddItem(weapon2, 1);
                     player->AddItem(weapon3, 1);
-                    player->AddItem(bag, 4);
+                    player->AddItem(bag, 1);
                     break;
 
                 case CLASS_ROGUE:
@@ -241,7 +241,7 @@ public:
                     player->AddItem(chest, 1);
                     player->AddItem(weapon, 1);
                     player->AddItem(weapon2, 1);
-                    player->AddItem(bag, 4);
+                    player->AddItem(bag, 1);
                     break;
 
                 case CLASS_DRUID:
@@ -254,7 +254,7 @@ public:
                     player->AddItem(shoulders2, 1);
                     player->AddItem(chest2, 1);
                     player->AddItem(weapon2, 1);
-                    player->AddItem(bag, 4);
+                    player->AddItem(bag, 1);
                     break;
 
                 case CLASS_SHAMAN:
@@ -266,7 +266,7 @@ public:
                     player->AddItem(shoulders2, 1);
                     player->AddItem(chest2, 1);
                     player->AddItem(weapon2, 1);
-                    player->AddItem(bag, 4);
+                    player->AddItem(bag, 1);
                     break;
 
                 default:
@@ -275,7 +275,7 @@ public:
                     player->AddItem(shoulders, 1);
                     player->AddItem(chest, 1);
                     player->AddItem(weapon, 1);
-                    player->AddItem(bag, 4);
+                    player->AddItem(bag, 1);
                     break;
                 }
 
@@ -288,6 +288,7 @@ public:
             // If enabled, learn additional skills
             if (sConfigMgr->GetBoolDefault("CustomLogin.Skills", true))
             {
+                player->AddItem(9017, 1); // premium book
                 switch (player->getClass())
                 {
 
