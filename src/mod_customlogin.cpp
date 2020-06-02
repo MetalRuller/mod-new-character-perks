@@ -482,7 +482,7 @@ public:
         }
     }
 
-    void OnLogin(Player* player)
+    /*void OnLogin(Player* player)
     {
         // If enabled..
         if (sConfigMgr->GetBoolDefault("CustomLogin.Enable", true))
@@ -506,9 +506,9 @@ public:
                 }
             }
         }
-    }
+    }*/
 
-    void OnLogout(Player *player)
+    /*void OnLogout(Player *player)
     {
         if (sConfigMgr->GetBoolDefault("CustomLogin.Enable", true))
         {
@@ -530,7 +530,7 @@ public:
                 }
             }
         }
-    }
+    }*/
 };
 
 void AddCustomLoginScripts()
