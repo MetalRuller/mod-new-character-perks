@@ -487,11 +487,6 @@ public:
         // If enabled..
         if (sConfigMgr->GetBoolDefault("CustomLogin.Enable", true))
         {
-            // Announce Module
-            if (sConfigMgr->GetBoolDefault("CustomLogin.Announce", true))
-            {
-                ChatHandler(player->GetSession()).SendSysMessage("This server is running the |cff4CFF00CustomLogin |rmodule.");
-            }
 
             // If enabled..
             if (sConfigMgr->GetBoolDefault("CustomLogin.PlayerAnnounce", true))
